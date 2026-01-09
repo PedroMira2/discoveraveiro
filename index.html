@@ -2,16 +2,139 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Aveiro</title>
-    <!-- Redireciona imediatamente para a pasta do site real -->
-    <meta http-equiv="refresh" content="0; URL='./discoveraveiro.pt/index.html'">
-    <script type="text/javascript">
-        window.location.href = "./discoveraveiro.pt/index.html"
-    </script>
+    <title>Discover Aveiro | Experiência Premium</title>
+    <!-- Redirecionamento após a animação de loading -->
+    <meta http-equiv="refresh" content="3.5; URL='./discoveraveiro.pt/index.html'">
+
+    <style>
+        :root {
+            --accent-color: #004b93; /* Azul Profundo Business */
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg-gradient);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Glassmorphism Container */
+        .premium-card {
+            text-align: center;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+            animation: slideUp 1s ease-out;
+        }
+
+        .logo-wrapper {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));
+            transition: transform 0.5s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Barra de Progresso Minimalista */
+        .progress-container {
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background: var(--accent-color);
+            border-radius: 10px;
+            animation: progressRun 3s ease-in-out forwards;
+        }
+
+        .status-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2c3e50;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+
+        /* Animações Premium */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes progressRun {
+            0% { width: 0%; }
+            50% { width: 70%; }
+            100% { width: 100%; }
+        }
+
+        /* Efeito de brilho suave no fundo */
+        .bg-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0,75,147,0.1) 0%, rgba(255,255,255,0) 70%);
+            z-index: -1;
+            animation: pulseGlow 8s infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            from { transform: translate(-10%, -10%); }
+            to { transform: translate(10%, 10%); }
+        }
+    </style>
 </head>
 <body>
-    <p>A carregar Discover Aveiro... Se não for redirecionado, <a href="./discoveraveiro.pt/index.html">clique aqui</a>.</p>
+
+    <div class="bg-glow"></div>
+
+    <div class="premium-card">
+        <div class="logo-wrapper">
+            <img src="discoveraveiro.pt/wp-content/uploads/2025/08/cropped-cropped-logo-Discover-Aveiro-Turismo-Aluguer-de-bicicleta-passeio-de-barco-moliceiro_4_72ppi-192x192.png" 
+                 alt="Discover Aveiro" 
+                 class="logo">
+        </div>
+
+        <div class="status-text">A carregar a excelência</div>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <p style="font-size: 12px; color: #7f8c8d; margin-top: 25px; font-weight: 300;">
+            Discover Aveiro &copy; 2026 <br> Turismo de Experiência
+        </p>
+    </div>
+
 </body>
 </html>
