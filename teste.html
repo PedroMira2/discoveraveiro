@@ -1,1246 +1,1486 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html class="no-js" dir="ltr" lang="pt-PT" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Aveiro | Experiências Premium em Aveiro, Portugal</title>
-    <meta name="description" content="Descubra Aveiro através de experiências turísticas exclusivas. Passeios de barco, aluguer de bicicletas, tours guiados e serviços premium na Veneza Portuguesa.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width">
+    <title>Discover Aveiro - Descubra Aveiro através das nossas marcas</title>
+    <meta name="description" content="DESCUBRA AVEIRO: Da esplanada do Cais da Ribeira de Esgueira ao aluguer de bicicletas da Ride In Aveiro ou passeio de barcos pela Ria com a Aveiro no Coração.">
     
-    <!-- Fontes -->
+    <!-- Open Graph / Social Media -->
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:site_name" content="Discover Aveiro - Descubra o Turismo na cidade de Aveiro">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discover Aveiro - Descubra Aveiro através das nossas marcas">
+    <meta property="og:description" content="DESCUBRA AVEIRO: Da esplanada do Cais da Ribeira de Esgueira ao aluguer de bicicletas da Ride In Aveiro ou passeio de barcos pela Ria com a Aveiro no Coração.">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="wp-content/uploads/2025/08/cropped-logo-Discover-Aveiro-Turismo-Aluguer-de-bicicleta-passeio-de-barco-moliceiro_4_72ppi.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discover Aveiro - Descubra Aveiro através das nossas marcas">
+    <meta name="twitter:description" content="DESCUBRA AVEIRO: Da esplanada do Cais da Ribeira de Esgueira ao aluguer de bicicletas da Ride In Aveiro ou passeio de barcos pela Ria com a Aveiro no Coração.">
+    <meta name="twitter:image" content="wp-content/uploads/2025/08/cropped-logo-Discover-Aveiro-Turismo-Aluguer-de-bicicleta-passeio-de-barco-moliceiro_4_72ppi.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="wp-content/uploads/2025/08/cropped-cropped-logo-Discover-Aveiro-Turismo-Aluguer-de-bicicleta-passeio-de-barco-moliceiro_4_72ppi-32x32.png" sizes="32x32">
+    <link rel="icon" href="wp-content/uploads/2025/08/cropped-cropped-logo-Discover-Aveiro-Turismo-Aluguer-de-bicicleta-passeio-de-barco-moliceiro_4_72ppi-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="wp-content/uploads/2025/08/cropped-cropped-logo-Discover-Aveiro-Turismo-Aluguer-de-bicicleta-passeio-de-barco-moliceiro_4_72ppi-180x180.png">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Ícones -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- CSS -->
     <style>
+        /* ============================================
+           DISCOVER AVEIRO - DESIGN PREMIUM UPDATE
+           Estilo: Minimalista, Premium, Europeu Contemporâneo
+           ============================================ */
+
+        /* ===== VARIÁVEIS E RESET ===== */
         :root {
-            --primary-blue: #0a2463;
-            --dark-blue: #071430;
-            --light-blue: #3e78b2;
-            --accent-gold: #d4af37;
-            --light-gold: #f4e8c1;
-            --pure-white: #ffffff;
-            --light-gray: #f8f9fa;
-            --medium-gray: #e9ecef;
-            --dark-gray: #6c757d;
-            --text-dark: #212529;
-            
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
-            --shadow-lg: 0 8px 30px rgba(0,0,0,0.15);
-            
-            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --primary-color: #1a365d;
+            --secondary-color: #2d3748;
+            --accent-color: #c89b3c;
+            --light-color: #f8f9fa;
+            --dark-color: #1a202c;
+            --text-color: #2d3748;
+            --text-light: #718096;
+            --border-color: #e2e8f0;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+            --shadow-strong: 0 12px 40px rgba(0, 0, 0, 0.15);
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.3s ease;
             --border-radius: 12px;
-            --border-radius-sm: 8px;
+            --border-radius-lg: 20px;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-color);
             line-height: 1.6;
-            color: var(--text-dark);
-            background-color: var(--pure-white);
+            background-color: var(--light-color);
             overflow-x: hidden;
+            font-weight: 400;
         }
-        
-        h1, h2, h3, h4, h5 {
-            font-family: 'Playfair Display', serif;
+
+        .no-js {
+            opacity: 1 !important;
+        }
+
+        /* ===== TIPOGRAFIA PREMIUM ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
             font-weight: 600;
-            line-height: 1.2;
+            line-height: 1.3;
+            color: var(--primary-color);
             margin-bottom: 1rem;
         }
-        
-        h1 {
-            font-size: 3.5rem;
-            letter-spacing: -0.5px;
-        }
-        
-        h2 {
-            font-size: 2.5rem;
-        }
-        
-        h3 {
-            font-size: 1.75rem;
-        }
-        
+
+        h1 { font-size: 3.5rem; letter-spacing: -0.5px; }
+        h2 { font-size: 2.5rem; letter-spacing: -0.3px; }
+        h3 { font-size: 2rem; }
+        h4 { font-size: 1.5rem; }
+        h5 { font-size: 1.25rem; }
+        h6 { font-size: 1rem; }
+
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-size: 1.1rem;
-            color: var(--dark-gray);
+            color: var(--text-light);
+            line-height: 1.8;
         }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
+
+        .text-lead {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+            line-height: 1.7;
         }
-        
-        .container {
+
+        .text-small {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .text-accent {
+            color: var(--accent-color);
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* ===== LAYOUT E CONTAINERS ===== */
+        .aux-wrapper {
             width: 100%;
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
-        .section-padding {
-            padding: 6rem 0;
+
+        @media (max-width: 768px) {
+            .aux-wrapper {
+                padding: 0 1.5rem;
+            }
         }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 4rem;
+
+        .aux-container {
+            width: 100%;
         }
-        
-        .section-title h2 {
-            color: var(--primary-blue);
-            position: relative;
-            display: inline-block;
-            padding-bottom: 1rem;
-        }
-        
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--accent-gold);
-        }
-        
-        .section-title p {
-            max-width: 700px;
-            margin: 1rem auto 0;
-            font-size: 1.2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background-color: var(--accent-gold);
-            color: var(--dark-blue);
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            transition: var(--transition);
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .btn:hover {
-            background-color: var(--light-gold);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--accent-gold);
-            color: var(--accent-gold);
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--accent-gold);
-            color: var(--dark-blue);
-        }
-        
-        .btn-large {
-            padding: 1.2rem 3rem;
-            font-size: 1.1rem;
-        }
-        
-        /* Header e Navegação */
-        header {
+
+        /* ===== HEADER MODERNO E TRANSPARENTE ===== */
+        .aux-elementor-header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
-            background-color: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(10px);
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-smooth);
         }
-        
-        .header-container {
+
+        .site-header-section.aux-sticky {
+            background: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .aux-header-elements-wrapper {
+            padding: 0 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .aux-header-elements-wrapper {
+                padding: 0 1rem;
+            }
+        }
+
+        .aux-elementor-header-menu {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
-            padding: 1.5rem 2rem;
+            height: 90px;
         }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        
-        .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--pure-white);
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        
-        .logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary-blue);
-        }
-        
-        .logo-text span {
-            color: var(--accent-gold);
-        }
-        
-        nav ul {
+
+        /* Menu de Navegação */
+        #menu-header-menu {
             display: flex;
             list-style: none;
             gap: 2.5rem;
+            margin: 0;
+            padding: 0;
         }
-        
-        nav a {
+
+        #menu-header-menu .aux-menu-item {
+            position: relative;
+        }
+
+        #menu-header-menu .aux-menu-label {
+            font-family: 'Poppins', sans-serif;
             font-weight: 500;
-            font-size: 1.05rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            color: var(--secondary-color);
+            transition: var(--transition-smooth);
             position: relative;
             padding: 0.5rem 0;
+            text-decoration: none;
+            display: inline-block;
         }
-        
-        nav a::after {
+
+        #menu-header-menu .aux-menu-label::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
             width: 0;
             height: 2px;
-            background-color: var(--accent-gold);
-            transition: var(--transition);
+            background: var(--accent-color);
+            transition: var(--transition-smooth);
         }
-        
-        nav a:hover::after {
+
+        #menu-header-menu .aux-menu-item:hover .aux-menu-label {
+            color: var(--primary-color);
+        }
+
+        #menu-header-menu .aux-menu-item:hover .aux-menu-label::after {
             width: 100%;
         }
-        
-        .nav-cta {
-            background-color: var(--primary-blue);
-            color: white;
-            padding: 0.75rem 1.75rem;
-            border-radius: var(--border-radius);
+
+        #menu-header-menu .current-menu-item .aux-menu-label {
+            color: var(--primary-color);
+            font-weight: 600;
         }
-        
-        .nav-cta:hover {
-            background-color: var(--dark-blue);
+
+        #menu-header-menu .current-menu-item .aux-menu-label::after {
+            width: 100%;
         }
-        
-        .mobile-menu-btn {
+
+        /* Burger Menu (Mobile) */
+        .aux-burger-box {
             display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--primary-blue);
             cursor: pointer;
         }
-        
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            min-height: 700px;
+
+        .aux-burger {
+            width: 30px;
+            height: 20px;
             position: relative;
-            overflow: hidden;
+        }
+
+        .aux-burger .mid-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-color);
+            top: 50%;
+            transform: translateY(-50%);
+            transition: var(--transition-fast);
+        }
+
+        .aux-burger .mid-line::before,
+        .aux-burger .mid-line::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-color);
+            left: 0;
+            transition: var(--transition-fast);
+        }
+
+        .aux-burger .mid-line::before {
+            top: -8px;
+        }
+
+        .aux-burger .mid-line::after {
+            bottom: -8px;
+        }
+
+        /* ===== HERO SECTION - BANNER PRINCIPAL ===== */
+        .elementor-element-2d85da4 {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 10rem 0 6rem !important;
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(rgba(10, 36, 99, 0.7), rgba(10, 36, 99, 0.5));
-            color: var(--pure-white);
+            position: relative;
+            overflow: hidden;
+            margin-top: 0 !important;
         }
-        
-        .hero-video {
+
+        .elementor-element-2d85da4::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" opacity="0.05"><path d="M0,0 L100,0 L100,100 Z" fill="white"/></svg>');
+            background-size: cover;
+        }
+
+        .elementor-element-2d85da4 .e-con-inner {
+            position: relative;
+            z-index: 2;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
         }
-        
-        .hero-content {
-            max-width: 800px;
-            padding: 2rem;
-        }
-        
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        
-        .hero p {
-            font-size: 1.4rem;
-            margin-bottom: 2.5rem;
+
+        /* Títulos do Hero */
+        .elementor-element-f5bc48a h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             color: rgba(255, 255, 255, 0.9);
-            max-width: 600px;
-        }
-        
-        .hero-btns {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .hero .btn {
-            background-color: var(--accent-gold);
-            color: var(--dark-blue);
-        }
-        
-        .hero .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--pure-white);
-            color: var(--pure-white);
-        }
-        
-        .hero .btn-outline:hover {
-            background-color: var(--pure-white);
-            color: var(--primary-blue);
-        }
-        
-        /* Why Choose Us Section */
-        .features {
-            background-color: var(--light-gray);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-        }
-        
-        .feature-card {
-            background-color: var(--pure-white);
-            border-radius: var(--border-radius);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            color: var(--pure-white);
-            font-size: 2rem;
-        }
-        
-        .feature-card h3 {
-            color: var(--primary-blue);
             margin-bottom: 1rem;
         }
-        
-        /* Experiences Section */
-        .experiences-filter {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 3rem;
+
+        .elementor-element-05704c1 h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 4rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
         }
-        
-        .filter-btn {
-            padding: 0.75rem 1.75rem;
-            background-color: var(--pure-white);
-            border: 1px solid var(--medium-gray);
-            border-radius: var(--border-radius);
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition);
+
+        @media (max-width: 1024px) {
+            .elementor-element-05704c1 h2 {
+                font-size: 3rem;
+            }
         }
-        
-        .filter-btn.active, .filter-btn:hover {
-            background-color: var(--primary-blue);
-            color: var(--pure-white);
-            border-color: var(--primary-blue);
+
+        @media (max-width: 768px) {
+            .elementor-element-2d85da4 {
+                padding: 8rem 0 4rem !important;
+                min-height: 80vh;
+            }
+            
+            .elementor-element-05704c1 h2 {
+                font-size: 2.5rem;
+            }
         }
-        
-        .experiences-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2.5rem;
+
+        @media (max-width: 480px) {
+            .elementor-element-05704c1 h2 {
+                font-size: 2rem;
+            }
         }
-        
-        .experience-card {
-            background-color: var(--pure-white);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-        }
-        
-        .experience-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .experience-img {
-            height: 250px;
-            width: 100%;
-            object-fit: cover;
-        }
-        
-        .experience-content {
-            padding: 2rem;
-        }
-        
-        .experience-content h3 {
-            color: var(--primary-blue);
-            margin-bottom: 0.75rem;
-        }
-        
-        .experience-price {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent-gold);
-            margin: 1rem 0;
-        }
-        
-        .experience-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-        
-        .experience-tag {
-            background-color: var(--light-gray);
-            padding: 0.4rem 1rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            background-color: var(--primary-blue);
-            color: var(--pure-white);
-        }
-        
-        .testimonials .section-title h2 {
-            color: var(--pure-white);
-        }
-        
-        .testimonials .section-title h2::after {
-            background-color: var(--accent-gold);
-        }
-        
-        .testimonials .section-title p {
-            color: rgba(255, 255, 255, 0.8);
-        }
-        
-        .testimonials-slider {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .testimonial-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: var(--border-radius);
-            padding: 3rem;
-            text-align: center;
-            margin: 0 1rem;
-        }
-        
-        .testimonial-text {
+
+        /* Texto descritivo */
+        .elementor-element-33df43b p {
             font-size: 1.2rem;
-            font-style: italic;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+        }
+
+        /* Botão de vídeo */
+        .elementor-element-b11ece6 {
             margin-bottom: 2rem;
-            line-height: 1.8;
         }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
+
+        .elementor-element-b11ece6 .elementor-icon-wrapper {
+            display: inline-block;
         }
-        
-        .author-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
+
+        .elementor-element-b11ece6 .elementor-icon {
+            color: var(--accent-color);
+            font-size: 3.5rem;
+            transition: var(--transition-smooth);
+            display: inline-block;
         }
-        
-        .author-info h4 {
-            margin-bottom: 0.25rem;
+
+        .elementor-element-b11ece6 .elementor-icon:hover {
+            transform: scale(1.15);
+            color: white;
         }
-        
-        .author-info p {
+
+        /* Texto "Vídeo Apresentação" */
+        .elementor-element-3a1cc9c p {
+            font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
             margin: 0;
         }
-        
-        /* Quick Booking */
-        .quick-booking {
-            background-color: var(--light-gray);
+
+        /* Imagem do Hero */
+        .elementor-element-3aa1a07 img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-strong);
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: var(--transition-smooth);
         }
-        
-        .booking-form {
+
+        .elementor-element-3aa1a07 img:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        /* ===== SEÇÃO "SOBRE NÓS" ===== */
+        .elementor-element-ffaa94a {
+            padding: 8rem 0 !important;
+            background: white;
+            position: relative;
+        }
+
+        /* Título "SOBRE NÓS" */
+        .elementor-element-3fad68a p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Divisor */
+        .elementor-element-f3cf5cd .elementor-divider-separator {
+            border-top-width: 2px;
+            border-top-color: var(--accent-color);
+            width: 80px;
+            margin: 0 auto 3rem;
+        }
+
+        /* Título principal */
+        .elementor-element-84ea89e .aux-modern-heading-primary {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* Texto descritivo */
+        .elementor-element-ed76b26 p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.8;
             max-width: 800px;
             margin: 0 auto;
-            background-color: var(--pure-white);
-            border-radius: var(--border-radius);
-            padding: 3rem;
-            box-shadow: var(--shadow-md);
+            text-align: center;
         }
-        
-        .form-grid {
+
+        /* ===== SEÇÃO DAS MARCAS ===== */
+        .elementor-element-6a33b3b {
+            padding: 6rem 0 !important;
+            background: linear-gradient(to bottom, #f8f9fa 0%, white 100%);
+        }
+
+        .e-con-inner {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .e-con-inner {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Containers das marcas */
+        .elementor-element-12ebbc3,
+        .elementor-element-4e099d7 {
+            background: white !important;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-smooth);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .elementor-element-12ebbc3:hover,
+        .elementor-element-4e099d7:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-strong);
+            border-color: transparent;
+        }
+
+        /* Cartões individuais */
+        .elementor-element-5d585c5,
+        .elementor-element-d49bb6d,
+        .elementor-element-3ed442a,
+        .elementor-element-e8d5686 {
+            background: white !important;
+            padding: 3rem 2rem !important;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        /* Logos das marcas */
+        .aux-widget-image {
             margin-bottom: 2rem;
         }
-        
-        .form-group {
-            display: flex;
-            flex-direction: column;
+
+        .aux-widget-image img {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+            filter: grayscale(20%);
+            transition: var(--transition-smooth);
+            opacity: 0.9;
         }
-        
-        .form-group label {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            color: var(--primary-blue);
+
+        .elementor-element-12ebbc3:hover .aux-widget-image img,
+        .elementor-element-4e099d7:hover .aux-widget-image img {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
         }
-        
-        .form-control {
-            padding: 1rem;
-            border: 1px solid var(--medium-gray);
-            border-radius: var(--border-radius-sm);
+
+        /* Títulos das marcas */
+        .aux-modern-heading-primary {
+            font-family: 'Poppins', sans-serif;
             font-size: 1rem;
-            transition: var(--transition);
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
         }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--accent-gold);
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+
+        .aux-modern-heading-secondary {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
         }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark-blue);
-            color: var(--pure-white);
-            padding: 5rem 0 2rem;
+
+        .aux-head-before {
+            position: relative;
         }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
+
+        .aux-head-before::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+            border-radius: 2px;
         }
-        
-        .footer-logo {
+
+        /* Descrição das marcas */
+        .aux-modern-heading-description p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-top: 1rem;
+            max-width: 500px;
+        }
+
+        /* ===== FOOTER ELEGANTE ===== */
+        .aux-elementor-footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 5rem 0 2rem !important;
+            margin-top: 4rem;
+        }
+
+        .elementor-element-c6c8897 {
+            padding-bottom: 3rem !important;
+            margin-bottom: 2rem !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Logo no footer */
+        .aux-elementor-footer img {
+            max-width: 180px;
+            height: auto;
             margin-bottom: 1.5rem;
+            opacity: 0.9;
+            transition: var(--transition-fast);
         }
-        
-        .footer-logo .logo-text {
-            color: var(--pure-white);
+
+        .aux-elementor-footer img:hover {
+            opacity: 1;
         }
-        
-        .footer-about p {
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 1.5rem;
+
+        /* Informação da empresa */
+        .aux-modern-heading-primary {
+            color: white !important;
+            font-size: 2rem !important;
+            margin-bottom: 1rem !important;
         }
-        
-        .footer-links h4, .footer-contact h4 {
-            color: var(--pure-white);
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
+
+        .aux-modern-heading-description p {
+            color: rgba(255, 255, 255, 0.8) !important;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
-        
-        .footer-links ul {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 0.75rem;
-        }
-        
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
-            transition: var(--transition);
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent-gold);
-            padding-left: 5px;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 1rem;
+
+        /* Logo Visit Portugal */
+        .elementor-element-23075e9 img {
+            max-width: 250px;
+            height: auto;
             margin-top: 1.5rem;
         }
-        
-        .social-link {
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
+
+        /* Links do footer */
+        .elementor-element-ce7413e small {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .elementor-element-ce7413e a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: var(--transition-fast);
+            padding: 0.5rem 0;
+            position: relative;
+            margin: 0 0.5rem;
+        }
+
+        .elementor-element-ce7413e a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent-color);
+            transition: var(--transition-fast);
+        }
+
+        .elementor-element-ce7413e a:hover {
+            color: white;
+        }
+
+        .elementor-element-ce7413e a:hover::after {
+            width: 100%;
+        }
+
+        /* ===== BOTÃO SCROLL TO TOP ===== */
+        .aux-goto-top-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition-smooth);
+        }
+
+        .aux-goto-top-btn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .aux-hover-slide {
+            width: 50px;
+            height: 50px;
+            background: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: var(--transition);
+            box-shadow: var(--shadow-medium);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border: 2px solid transparent;
         }
-        
-        .social-link:hover {
-            background-color: var(--accent-gold);
-            color: var(--dark-blue);
+
+        .aux-hover-slide:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-strong);
         }
-        
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.9rem;
+
+        .aux-hover-slide:hover .aux-svg-arrow {
+            color: white;
         }
-        
-        /* Animações */
-        .fade-in {
+
+        .aux-svg-arrow {
+            color: var(--primary-color);
+            transition: var(--transition-fast);
+        }
+
+        /* ===== ANIMAÇÕES SUAVES ===== */
+        .aux-appear-watch-animation {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-        
-        .fade-in.visible {
+
+        .aux-appear-watch-animation.aux-visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
-        /* Responsividade */
-        @media (max-width: 1024px) {
-            h1 {
-                font-size: 3rem;
-            }
-            
-            h2 {
-                font-size: 2.2rem;
-            }
-            
-            .hero h1 {
-                font-size: 3.2rem;
-            }
+
+        .aux-fade-in {
+            animation: fadeIn 0.8s ease-out;
         }
-        
-        @media (max-width: 768px) {
-            .header-container {
-                padding: 1rem;
-            }
-            
-            nav ul {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .mobile-menu {
-                position: fixed;
-                top: 80px;
-                left: 0;
-                width: 100%;
-                background-color: var(--pure-white);
-                box-shadow: var(--shadow-md);
-                padding: 2rem;
-                transform: translateY(-100%);
+
+        .aux-fade-in-left-1 {
+            animation: fadeInLeft 0.8s ease-out 0.2s both;
+        }
+
+        .aux-fade-in-right-1 {
+            animation: fadeInRight 0.8s ease-out 0.2s both;
+        }
+
+        @keyframes fadeIn {
+            from {
                 opacity: 0;
-                transition: var(--transition);
-                z-index: 999;
             }
-            
-            .mobile-menu.active {
-                transform: translateY(0);
+            to {
                 opacity: 1;
             }
-            
-            .mobile-menu ul {
-                flex-direction: column;
-                gap: 1.5rem;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
             }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleDown {
+            from {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .aux-scale-down {
+            animation: scaleDown 0.8s ease-out;
+        }
+
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 768px) {
+            /* Header mobile */
+            .aux-burger-box {
+                display: block;
+            }
+
+            #menu-header-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 2rem;
+                box-shadow: var(--shadow-medium);
+                border-radius: 0 0 var(--border-radius) var(--border-radius);
+            }
+
+            #menu-header-menu.active {
+                display: flex;
+            }
+
+            /* Ajustes de tamanho */
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.75rem; }
             
-            .hero h1 {
+            .elementor-element-05704c1 h2 {
                 font-size: 2.5rem;
             }
             
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .hero-btns {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .section-padding {
-                padding: 4rem 0;
-            }
-            
-            .features-grid, .experiences-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .booking-form {
-                padding: 2rem;
-            }
-            
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 1rem;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .hero h1 {
+            .elementor-element-84ea89e .aux-modern-heading-primary {
                 font-size: 2rem;
             }
             
-            .testimonial-card {
-                padding: 2rem 1.5rem;
+            .aux-modern-heading-secondary {
+                font-size: 1.5rem;
+            }
+            
+            .elementor-element-5d585c5,
+            .elementor-element-d49bb6d,
+            .elementor-element-3ed442a,
+            .elementor-element-e8d5686 {
+                padding: 2rem 1.5rem !important;
+            }
+            
+            .aux-elementor-footer {
+                padding: 3rem 0 1.5rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .elementor-element-05704c1 h2 {
+                font-size: 2rem;
+            }
+            
+            .elementor-element-84ea89e .aux-modern-heading-primary {
+                font-size: 1.75rem;
+            }
+            
+            .aux-modern-heading-secondary {
+                font-size: 1.25rem;
+            }
+            
+            .aux-wrapper {
+                padding: 0 1rem;
+            }
+            
+            .aux-elementor-footer {
+                text-align: center;
+            }
+            
+            .elementor-element-ce7413e a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* ===== UTILITÁRIOS ===== */
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .text-left { text-align: left; }
+        
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mb-4 { margin-bottom: 2rem; }
+        .mb-5 { margin-bottom: 3rem; }
+        
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+        .mt-4 { margin-top: 2rem; }
+        .mt-5 { margin-top: 3rem; }
+        
+        .px-1 { padding-left: 0.5rem; padding-right: 0.5rem; }
+        .px-2 { padding-left: 1rem; padding-right: 1rem; }
+        .px-3 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .px-4 { padding-left: 2rem; padding-right: 2rem; }
+        
+        .d-flex { display: flex; }
+        .d-block { display: block; }
+        .d-none { display: none; }
+        
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .align-center { align-items: center; }
+        
+        .w-100 { width: 100%; }
+        .h-100 { height: 100%; }
+
+        /* ===== SCROLLBAR PERSONALIZADA ===== */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--secondary-color);
+            border-radius: 5px;
+            transition: var(--transition-fast);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-color);
+        }
+
+        /* ===== LOADING SUAVE ===== */
+        .phlox-pro.aux-dom-unready {
+            opacity: 0;
+        }
+
+        .phlox-pro {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        /* ===== ESTADOS DE FOCUS ===== */
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* ===== IMPRESSÃO ===== */
+        @media print {
+            .aux-elementor-header,
+            .aux-elementor-footer,
+            .aux-goto-top-btn {
+                display: none;
+            }
+            
+            body {
+                color: #000;
+                background: #fff;
             }
         }
     </style>
-</head>
-<body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container header-container">
-            <a href="#home" class="logo">
-                <div class="logo-icon">DA</div>
-                <div class="logo-text">Discover<span>Aveiro</span></div>
-            </a>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#experiences">Experiências</a></li>
-                    <li><a href="#about">Sobre Nós</a></li>
-                    <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#booking">Reservas</a></li>
-                    <li><a href="#contact">Contactos</a></li>
-                    <li><a href="#booking" class="nav-cta">Reservar Agora</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#experiences">Experiências</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#booking">Reservas</a></li>
-                <li><a href="#contact">Contactos</a></li>
-                <li><a href="#booking" class="btn">Reservar Agora</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-boat-going-under-a-bridge-4305-large.mp4" type="video/mp4">
-            <!-- Fallback image -->
-        </video>
-        
-        <div class="container">
-            <div class="hero-content fade-in">
-                <h1>Descubra a Magia de Aveiro</h1>
-                <p>Experiências turísticas premium, passeios exclusivos e momentos inesquecíveis na Veneza Portuguesa. Descubra a autêntica essência de Aveiro connosco.</p>
-                <div class="hero-btns">
-                    <a href="#experiences" class="btn btn-large">Explorar Experiências</a>
-                    <a href="#booking" class="btn btn-outline btn-large">Reservar Agora</a>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#why-choose" class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="features section-padding" id="why-choose">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Porquê Escolher a Discover Aveiro?</h2>
-                <p>Oferecemos experiências únicas que vão além do turismo convencional, com atenção aos detalhes e um compromisso com a excelência.</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Experiências Premium</h3>
-                    <p>Selecionamos cuidadosamente cada experiência para garantir momentos memoráveis e de alta qualidade.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Guias Especializados</h3>
-                    <p>Nossos guias locais partilham histórias e segredos que só um verdadeiro aveirense conhece.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Turismo Sustentável</h3>
-                    <p>Comprometidos com práticas sustentáveis que preservam a beleza natural e cultural de Aveiro.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Atendimento Personalizado</h3>
-                    <p>Criamos experiências à medida, adaptadas aos seus interesses e preferências pessoais.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experiences -->
-    <section class="experiences section-padding" id="experiences">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Experiências em Destaque</h2>
-                <p>Descubra as melhores formas de explorar Aveiro através das nossas experiências cuidadosamente selecionadas.</p>
-            </div>
-            
-            <div class="experiences-filter fade-in">
-                <button class="filter-btn active" data-filter="all">Todas</button>
-                <button class="filter-btn" data-filter="boat">Passeios de Barco</button>
-                <button class="filter-btn" data-filter="bike">Bicicletas</button>
-                <button class="filter-btn" data-filter="tour">Tours Guiados</button>
-                <button class="filter-btn" data-filter="food">Gastronomia</button>
-            </div>
-            
-            <div class="experiences-grid">
-                <div class="experience-card fade-in" data-category="boat">
-                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Passeio de Moliceiro" class="experience-img">
-                    <div class="experience-content">
-                        <h3>Passeio de Moliceiro Premium</h3>
-                        <p>Navegue pelos canais de Aveiro num autêntico moliceiro, com guia especializado e histórias fascinantes.</p>
-                        <div class="experience-price">€25<span>/pessoa</span></div>
-                        <div class="experience-tags">
-                            <span class="experience-tag">1h30</span>
-                            <span class="experience-tag">Grupo pequeno</span>
-                            <span class="experience-tag">Guia incluído</span>
-                        </div>
-                        <a href="#booking" class="btn" style="margin-top: 1.5rem; display: inline-block;">Reservar</a>
-                    </div>
-                </div>
-                
-                <div class="experience-card fade-in" data-category="bike">
-                    <img src="https://images.unsplash.com/photo-1571068316345-eb35e8c30c1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aluguer de Bicicleta" class="experience-img">
-                    <div class="experience-content">
-                        <h3>Aluguer de Bicicleta Premium</h3>
-                        <p>Explore Aveiro ao seu ritmo com as nossas bicicletas premium. Inclui roteiro personalizado e apoio técnico.</p>
-                        <div class="experience-price">€15<span>/dia</span></div>
-                        <div class="experience-tags">
-                            <span class="experience-tag">Dia inteiro</span>
-                            <span class="experience-tag">Equipamento incluído</span>
-                            <span class="experience-tag">Mapa digital</span>
-                        </div>
-                        <a href="#booking" class="btn" style="margin-top: 1.5rem; display: inline-block;">Reservar</a>
-                    </div>
-                </div>
-                
-                <div class="experience-card fade-in" data-category="tour">
-                    <img src="https://images.unsplash.com/photo-1580502304781-ee0cf3d21e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tour Art Nouveau" class="experience-img">
-                    <div class="experience-content">
-                        <h3>Tour Art Nouveau & História</h3>
-                        <p>Descubra a arquitetura única de Aveiro com um guia especializado em história da arte e arquitetura.</p>
-                        <div class="experience-price">€35<span>/pessoa</span></div>
-                        <div class="experience-tags">
-                            <span class="experience-tag">2 horas</span>
-                            <span class="experience-tag">Guiado</span>
-                            <span class="experience-tag">Grupo pequeno</span>
-                        </div>
-                        <a href="#booking" class="btn" style="margin-top: 1.5rem; display: inline-block;">Reservar</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center fade-in" style="margin-top: 4rem;">
-                <a href="#all-experiences" class="btn btn-outline">Ver Todas as Experiências</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials section-padding" id="testimonials">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>O Que Dizem os Nossos Visitantes</h2>
-                <p>Experiências reais de quem já descobriu Aveiro connosco.</p>
-            </div>
-            
-            <div class="testimonials-slider fade-in">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "O passeio de moliceiro foi absolutamente incrível! O guia partilhou histórias fascinantes e mostrou-nos cantos de Aveiro que nunca teríamos descoberto sozinhos. Uma experiência 5 estrelas!"
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Silva" class="author-avatar">
-                        <div class="author-info">
-                            <h4>Maria Silva</h4>
-                            <p>Lisboa, Portugal</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Booking -->
-    <section class="quick-booking section-padding" id="booking">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Reserva Rápida</h2>
-                <p>Garanta a sua experiência em Aveiro. Reserve agora de forma simples e segura.</p>
-            </div>
-            
-            <div class="booking-form fade-in">
-                <form id="bookingForm">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="experience">Experiência</label>
-                            <select id="experience" class="form-control" required>
-                                <option value="" disabled selected>Selecione uma experiência</option>
-                                <option value="moliceiro">Passeio de Moliceiro Premium</option>
-                                <option value="bike">Aluguer de Bicicleta Premium</option>
-                                <option value="tour">Tour Art Nouveau & História</option>
-                                <option value="gastronomy">Experiência Gastronómica</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="date">Data</label>
-                            <input type="date" id="date" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="participants">Participantes</label>
-                            <select id="participants" class="form-control" required>
-                                <option value="1">1 pessoa</option>
-                                <option value="2">2 pessoas</option>
-                                <option value="3">3 pessoas</option>
-                                <option value="4">4 pessoas</option>
-                                <option value="5+">5+ pessoas</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Telefone</label>
-                        <input type="tel" id="phone" class="form-control" required>
-                    </div>
-                    
-                    <div class="text-center" style="margin-top: 2.5rem;">
-                        <button type="submit" class="btn btn-large">Reservar Agora</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <div class="logo">
-                            <div class="logo-icon">DA</div>
-                            <div class="logo-text">Discover<span>Aveiro</span></div>
-                        </div>
-                    </div>
-                    <p>Especialistas em experiências turísticas premium em Aveiro. Oferecemos passeios exclusivos, aluguer de bicicletas e tours guiados que mostram o melhor da Veneza Portuguesa.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#experiences">Experiências</a></li>
-                        <li><a href="#about">Sobre Nós</a></li>
-                        <li><a href="#testimonials">Depoimentos</a></li>
-                        <li><a href="#booking">Reservas</a></li>
-                        <li><a href="#contact">Contactos</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contactos</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <p>Cais da Ribeira de Esgueira<br>Aveiro, Portugal</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <p>+351 234 123 456</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <p>info@discoveraveiro.pt</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Discover Aveiro. Todos os direitos reservados. | RNAAT 02/2020 | NIPC 515683817</p>
-                <p style="margin-top: 0.5rem;">
-                    <a href="#" style="color: rgba(255,255,255,0.7);">Política de Privacidade</a> | 
-                    <a href="#" style="color: rgba(255,255,255,0.7);">Termos e Condições</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
+    
+    <!-- JavaScript para interatividade -->
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mobileMenu.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-            } else {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
-            }
-        });
-        
-        // Scroll animations
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const appearOnScroll = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Adicionar classe para remover no-js
+            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+            
+            // Scroll to top button
+            const scrollToTopBtn = document.querySelector('.aux-goto-top-btn');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
                 }
             });
-        }, { threshold: 0.1 });
-        
-        fadeElements.forEach(element => {
-            appearOnScroll.observe(element);
-        });
-        
-        // Filter experiences
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const experienceCards = document.querySelectorAll('.experience-card');
-        
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
-                btn.classList.add('active');
+            
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Burger menu toggle
+            const burgerBtn = document.querySelector('.aux-burger-box');
+            const menu = document.querySelector('#menu-header-menu');
+            
+            if (burgerBtn) {
+                burgerBtn.addEventListener('click', function() {
+                    menu.classList.toggle('active');
+                });
                 
-                const filter = btn.getAttribute('data-filter');
-                
-                experienceCards.forEach(card => {
-                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                        card.style.display = 'block';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'translateY(0)';
-                        }, 10);
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 300);
+                // Fechar menu ao clicar fora
+                document.addEventListener('click', function(event) {
+                    if (!burgerBtn.contains(event.target) && !menu.contains(event.target)) {
+                        menu.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Animações de scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('aux-visible');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observar elementos com animação
+            document.querySelectorAll('.aux-appear-watch-animation').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Smooth scroll para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Fechar menu mobile se aberto
+                        if (menu.classList.contains('active')) {
+                            menu.classList.remove('active');
+                        }
                     }
                 });
             });
-        });
-        
-        // Booking form submission
-        const bookingForm = document.getElementById('bookingForm');
-        
-        bookingForm.addEventListener('submit', (e) => {
-            e.preventDefault();
             
-            // Get form values
-            const experience = document.getElementById('experience').value;
-            const date = document.getElementById('date').value;
-            const participants = document.getElementById('participants').value;
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            
-            // In a real application, you would send this data to a server
-            // For demo purposes, we'll just show an alert
-            alert(`Obrigado pela sua reserva, ${name}!\n\nDetalhes da reserva:\nExperiência: ${experience}\nData: ${date}\nParticipantes: ${participants}\n\nEntraremos em contacto em breve para confirmar.`);
-            
-            // Reset form
-            bookingForm.reset();
-        });
-        
-        // Set minimum date to today for booking
-        const dateInput = document.getElementById('date');
-        const today = new Date().toISOString().split('T')[0];
-        dateInput.setAttribute('min', today);
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
+            // Preload de imagens
+            const images = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries, imgObserver) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazyload');
+                        imgObserver.unobserve(img);
+                    }
+                });
             });
+            
+            images.forEach(img => imageObserver.observe(img));
+        });
+        
+        // Detectar mobile
+        function isMobile() {
+            return window.innerWidth <= 768;
+        }
+        
+        // Adicionar classe para mobile
+        if (isMobile()) {
+            document.documentElement.classList.add('is-mobile');
+        }
+        
+        window.addEventListener('resize', function() {
+            if (isMobile()) {
+                document.documentElement.classList.add('is-mobile');
+            } else {
+                document.documentElement.classList.remove('is-mobile');
+            }
         });
     </script>
+</head>
+
+<body class="home wp-singular page-template page-template-templates page-template-page-builder-content page-template-templatespage-builder-content-php page page-id-216 wp-custom-logo wp-theme-phlox-pro theme-phlox-pro auxin-pro woocommerce-no-js elementor-default elementor-kit-170 elementor-page elementor-page-216 phlox-pro aux-dom-unready aux-full-width aux-resp aux-s-fhd aux-page-animation-off _auxels" data-framed="">
+    <div id="inner-body">
+        <!-- HEADER -->
+        <header class="aux-elementor-header aux-overlay-header" id="site-elementor-header" itemscope itemtype="https://schema.org/WPHeader" data-sticky-height="80">
+            <div class="aux-wrapper">
+                <div class="aux-header aux-header-elements-wrapper">
+                    <div data-elementor-type="header" data-elementor-id="207" class="elementor elementor-207">
+                        <div class="aux-parallax-section elementor-element elementor-element-8de2573 e-flex e-con-boxed e-con e-parent" data-id="8de2573">
+                            <div class="e-con-inner">
+                                <div class="elementor-element elementor-element-1401a6f e-con-full e-flex e-con e-child" data-id="1401a6f">
+                                    <div class="elementor-element elementor-element-bf5d800 elementor-widget__width-auto elementor-widget elementor-widget-aux_menu_box" data-id="bf5d800">
+                                        <div class="elementor-widget-container">
+                                            <div class="aux-elementor-header-menu aux-nav-menu-element aux-nav-menu-element-bf5d800">
+                                                <div class="aux-burger-box" data-target-panel="overlay">
+                                                    <div class="aux-burger aux-regular-large">
+                                                        <span class="mid-line"></span>
+                                                    </div>
+                                                </div>
+                                                <nav id="master-menu-elementor-bf5d800" class="menu-header-menu-container">
+                                                    <ul id="menu-header-menu" class="aux-master-menu aux-no-js aux-skin-classic aux-with-indicator aux-horizontal">
+                                                        <li id="menu-item-217" class="a1i0s0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-216 current_page_item menu-item-217 aux-menu-depth-0 aux-menu-root-1 aux-menu-item">
+                                                            <a href="index.html" class="aux-item-content">
+                                                                <span class="aux-menu-label">Discover Aveiro</span>
+                                                            </a>
+                                                        </li>
+                                                        <li id="menu-item-265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-265 aux-menu-depth-0 aux-menu-root-2 aux-menu-item">
+                                                            <a href="https://passeiosbarcoaveiro.pt/" class="aux-item-content" target="_blank" rel="noopener">
+                                                                <span class="aux-menu-label">Aveiro no Coração</span>
+                                                            </a>
+                                                        </li>
+                                                        <li id="menu-item-266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-266 aux-menu-depth-0 aux-menu-root-3 aux-menu-item">
+                                                            <a href="https://rideinaveiro.pt/" class="aux-item-content" target="_blank" rel="noopener">
+                                                                <span class="aux-menu-label">Ride In Aveiro</span>
+                                                            </a>
+                                                        </li>
+                                                        <li id="menu-item-267" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-267 aux-menu-depth-0 aux-menu-root-4 aux-menu-item">
+                                                            <a href="https://ribeiradeesgueira.pt/" class="aux-item-content" target="_blank" rel="noopener">
+                                                                <span class="aux-menu-label">Cais da Ribeira</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main id="main" class="aux-main aux-territory aux-single aux-page aux-full-container no-sidebar aux-sidebar-style-border aux-user-entry">
+            <div class="aux-wrapper">
+                <div class="aux-container aux-fold">
+                    <div id="primary" class="aux-primary">
+                        <div class="content" role="main">
+                            <article id="post-216" class="post-216 page type-page status-publish hentry">
+                                <div data-elementor-type="wp-post" data-elementor-id="216" class="elementor elementor-216">
+                                    <!-- HERO SECTION -->
+                                    <div class="aux-parallax-section elementor-element elementor-element-2d85da4 e-flex e-con-boxed e-con e-parent" data-id="2d85da4">
+                                        <div class="e-con-inner">
+                                            <div class="elementor-element elementor-element-173de0c e-con-full e-flex e-con e-child" data-id="173de0c">
+                                                <div class="elementor-element elementor-element-f5bc48a elementor-widget elementor-widget-heading" data-id="f5bc48a">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">DESCUBRA</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-05704c1 elementor-widget elementor-widget-heading" data-id="05704c1">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">AVEIRO</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-33df43b elementor-widget elementor-widget-text-editor" data-id="33df43b">
+                                                    <div class="elementor-widget-container">
+                                                        <p>Conheça as nossas marcas:</p>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-b11ece6 elementor-view-default elementor-widget elementor-widget-icon" data-id="b11ece6">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-icon-wrapper">
+                                                            <a class="elementor-icon" href="a-essencia-de-aveiro-em-todas-as-marcas/index.html">
+                                                                <i aria-hidden="true" class="far fa-play-circle"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-3a1cc9c elementor-widget elementor-widget-text-editor" data-id="3a1cc9c">
+                                                    <div class="elementor-widget-container">
+                                                        <p><strong>Vídeo</strong></p>
+                                                        <p><strong>Apresentação</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-b108165 e-con-full e-flex e-con e-child" data-id="b108165">
+                                                <div class="elementor-element elementor-element-3aa1a07 elementor-widget elementor-widget-image" data-id="3aa1a07">
+                                                    <div class="elementor-widget-container">
+                                                        <img fetchpriority="high" decoding="async" width="1024" height="1024"
+                                                            src="wp-content/uploads/2025/08/imagem-inicial-banner-website-discover-aveiro-2-1024x1024.png"
+                                                            class="attachment-large size-large wp-image-372"
+                                                            alt="Serviços Discover Aveiro. Cais da Ribeira, Ride In Aveiro e Aveiro no Coração"
+                                                            srcset="https://discoveraveiro.pt/wp-content/uploads/2025/08/imagem-inicial-banner-website-discover-aveiro-2-1024x1024.png 1024w, https://discoveraveiro.pt/wp-content/uploads/2025/08/imagem-inicial-banner-website-discover-aveiro-2-300x300.png 300w, https://discoveraveiro.pt/wp-content/uploads/2025/08/imagem-inicial-banner-website-discover-aveiro-2-150x150.png 150w, https://discoveraveiro.pt/wp-content/uploads/2025/08/imagem-inicial-banner-website-discover-aveiro-2-768x768.png 768w, https://discoveraveiro.pt/wp-content/uploads/2025/08/imagem-inicial-banner-website-discover-aveiro-2-100x100.png 100w"
+                                                            sizes="(max-width: 1024px) 100vw, 1024px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- SOBRE NÓS SECTION -->
+                                    <div class="aux-parallax-section elementor-element elementor-element-ffaa94a aux-appear-watch-animation aux-scale-down e-flex e-con-boxed e-con e-parent" data-id="ffaa94a">
+                                        <div class="e-con-inner">
+                                            <div class="elementor-element elementor-element-907d308 e-con-full e-flex e-con e-child" data-id="907d308">
+                                                <div class="elementor-element elementor-element-3fad68a elementor-widget elementor-widget-text-editor" data-id="3fad68a">
+                                                    <div class="elementor-widget-container">
+                                                        <p class="text-uppercase text-accent">SOBRE NÓS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-a1f3081 e-con-full e-flex e-con e-child" data-id="a1f3081">
+                                                <div class="elementor-element elementor-element-f3cf5cd elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="f3cf5cd">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-divider">
+                                                            <span class="elementor-divider-separator"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-82f89ba e-con-full e-flex e-con e-child" data-id="82f89ba">
+                                                <div class="elementor-element elementor-element-84ea89e elementor-widget elementor-widget-aux_modern_heading" data-id="84ea89e">
+                                                    <div class="elementor-widget-container">
+                                                        <section class="aux-widget-modern-heading">
+                                                            <div class="aux-widget-inner">
+                                                                <h5 class="aux-modern-heading-primary">A Essência de Aveiro em cada marca</h5>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-5eb748b e-con-full e-flex e-con e-child" data-id="5eb748b">
+                                                <div class="elementor-element elementor-element-ed76b26 elementor-widget elementor-widget-text-editor" data-id="ed76b26">
+                                                    <div class="elementor-widget-container">
+                                                        <p class="text-lead">Cada marca é um convite a viver Aveiro de forma autêntica. Do aroma reconfortante do café à beira-ria - <strong>Cais da Ribeira</strong> - ao prazer de pedalar pelos passadiços - <strong>Ride In Aveiro</strong> - ou navegar pelos canais e esteiros da Ria - <strong>Aveiro no Coração</strong>. Oferecemos experiências que ligam quem nos visita ao que Aveiro tem de mais genuíno. Mais do que serviços, criamos momentos — sempre com o olhar posto na beleza natural, na cultura local e na simplicidade de bem receber.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MARCAS SECTION -->
+                                    <div class="aux-parallax-section elementor-element elementor-element-6a33b3b e-flex e-con-boxed e-con e-parent" data-id="6a33b3b">
+                                        <div class="e-con-inner">
+                                            <!-- Primeira linha de marcas -->
+                                            <div class="elementor-element elementor-element-601823c e-con-full e-flex e-con e-child" data-id="601823c">
+                                                <div class="elementor-element elementor-element-12ebbc3 e-con-full e-flex e-con e-child" data-id="12ebbc3">
+                                                    <!-- Aveiro no Coração -->
+                                                    <div class="elementor-element elementor-element-cfbe797 e-con-full e-flex e-con e-child" data-id="cfbe797">
+                                                        <div class="elementor-element elementor-element-bb32e6c e-con-full e-flex e-con e-child" data-id="bb32e6c">
+                                                            <div class="elementor-element elementor-element-5d585c5 aux-appear-watch-animation aux-fade-in-left-1 e-con-full e-flex e-con e-child" data-id="5d585c5">
+                                                                <div class="elementor-element elementor-element-a14755c elementor-widget elementor-widget-aux_image" data-id="a14755c">
+                                                                    <div class="elementor-widget-container">
+                                                                        <section class="widget-container aux-widget-image aux-alignnone">
+                                                                            <div class="aux-media-hint-frame">
+                                                                                <div class="aux-media-image aux-hover-active">
+                                                                                    <a href="https://passeiosbarcoaveiro.pt/" target="_blank" rel="noopener">
+                                                                                        <img decoding="async" width="1483" height="720"
+                                                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                                                            class="aux-attachment aux-featured-image aux-preload lazyload"
+                                                                                            alt="Logo Aveiro no Coração - Passeios de barco na Ria de Aveiro"
+                                                                                            data-src="https://discoveraveiro.pt/wp-content/uploads/2025/08/Logo-Aveiro-no-Coracao.png">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-element elementor-element-9e58664 e-con-full e-flex e-con e-child" data-id="9e58664">
+                                                                <div class="aux-parallax-piece elementor-element elementor-element-945aaf5 aux-appear-watch-animation aux-fade-in elementor-widget elementor-widget-aux_modern_heading" data-id="945aaf5">
+                                                                    <div class="elementor-widget-container">
+                                                                        <section class="aux-widget-modern-heading">
+                                                                            <div class="aux-widget-inner">
+                                                                                <p class="aux-modern-heading-primary text-uppercase text-accent">AVEIRO NO CORAÇÃO</p>
+                                                                                <h5 class="aux-modern-heading-secondary">
+                                                                                    <span class="aux-head-before">Passeios de Barco</span>
+                                                                                </h5>
+                                                                                <div class="aux-modern-heading-description">
+                                                                                    <p>Embarque num dos nossos passeios de moliceiro pelos canais e esteiros da Ria de Aveiro.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Ride In Aveiro -->
+                                                    <div class="elementor-element elementor-element-bd60636 e-con-full e-flex e-con e-child" data-id="bd60636">
+                                                        <div class="elementor-element elementor-element-06669a5 e-con-full e-flex e-con e-child" data-id="06669a5">
+                                                            <div class="elementor-element elementor-element-d49bb6d aux-appear-watch-animation aux-fade-in-left-1 e-con-full e-flex e-con e-child" data-id="d49bb6d">
+                                                                <div class="elementor-element elementor-element-467fd12 elementor-widget elementor-widget-aux_image" data-id="467fd12">
+                                                                    <div class="elementor-widget-container">
+                                                                        <section class="widget-container aux-widget-image aux-alignnone">
+                                                                            <div class="aux-media-hint-frame">
+                                                                                <div class="aux-media-image aux-hover-active">
+                                                                                    <a href="https://rideinaveiro.pt/" target="_blank" rel="noopener">
+                                                                                        <img decoding="async" width="241" height="95"
+                                                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                                                            class="aux-attachment aux-featured-image aux-preload lazyload"
+                                                                                            alt="Logo Ride In Aveiro 2025 - Aluguer de bicicletas"
+                                                                                            data-src="https://discoveraveiro.pt/wp-content/uploads/2025/08/Logo-Ride-In-Aveiro-2025-Marca-registada-02.png">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-element elementor-element-63cd623 e-con-full e-flex e-con e-child" data-id="63cd623">
+                                                                <div class="aux-parallax-piece elementor-element elementor-element-9745b19 aux-appear-watch-animation aux-fade-in elementor-widget elementor-widget-aux_modern_heading" data-id="9745b19">
+                                                                    <div class="elementor-widget-container">
+                                                                        <section class="aux-widget-modern-heading">
+                                                                            <div class="aux-widget-inner">
+                                                                                <h5 class="aux-modern-heading-primary text-uppercase text-accent">RIDE IN AVEIRO</h5>
+                                                                                <h5 class="aux-modern-heading-secondary">
+                                                                                    <span class="aux-head-before">Aluguer de Bicicletas</span>
+                                                                                </h5>
+                                                                                <div class="aux-modern-heading-description">
+                                                                                    <p>Serviço de aluguer de bicicletas para que possa visitar a cidade ou percorrer os Passadiços de Aveiro.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Segunda linha de marcas -->
+                                            <div class="elementor-element elementor-element-4e099d7 e-con-full e-flex e-con e-child" data-id="4e099d7">
+                                                <!-- Cais da Ribeira -->
+                                                <div class="elementor-element elementor-element-cb72982 e-con-full e-flex e-con e-child" data-id="cb72982">
+                                                    <div class="elementor-element elementor-element-4eaf4f9 e-con-full e-flex e-con e-child" data-id="4eaf4f9">
+                                                        <div class="elementor-element elementor-element-9e77bf3 e-con-full e-flex e-con e-child" data-id="9e77bf3">
+                                                            <div class="aux-parallax-piece elementor-element elementor-element-f25427f aux-appear-watch-animation aux-fade-in elementor-widget elementor-widget-aux_modern_heading" data-id="f25427f">
+                                                                <div class="elementor-widget-container">
+                                                                    <section class="aux-widget-modern-heading">
+                                                                        <div class="aux-widget-inner">
+                                                                            <p class="aux-modern-heading-primary text-uppercase text-accent">CAIS DA RIBEIRA DE ESGUEIRA</p>
+                                                                            <h5 class="aux-modern-heading-secondary">
+                                                                                <span class="aux-head-before">Cafetaria</span>
+                                                                            </h5>
+                                                                            <div class="aux-modern-heading-description">
+                                                                                <p>Um espaço com esplanada onde pode saborear os melhores cocktails, petiscar ou aproveitar uma leve refeição.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-3ed442a aux-appear-watch-animation aux-fade-in-right-1 e-con-full e-flex e-con e-child" data-id="3ed442a">
+                                                            <div class="elementor-element elementor-element-663c0f5 elementor-widget elementor-widget-aux_image" data-id="663c0f5">
+                                                                <div class="elementor-widget-container">
+                                                                    <section class="widget-container aux-widget-image aux-alignnone">
+                                                                        <div class="aux-media-hint-frame">
+                                                                            <div class="aux-media-image aux-hover-active">
+                                                                                <a href="https://ribeiradeesgueira.pt/" target="_blank" rel="noopener">
+                                                                                    <img loading="lazy" decoding="async" width="338" height="327"
+                                                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                                                        class="aux-attachment aux-featured-image aux-preload lazyload"
+                                                                                        alt="Logo Final_Cais da Ribeira"
+                                                                                        data-src="https://discoveraveiro.pt/wp-content/uploads/2025/08/Logo-Final_Cais-da-Ribeira.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Discover Aveiro -->
+                                                <div class="elementor-element elementor-element-28b5091 e-con-full e-flex e-con e-child" data-id="28b5091">
+                                                    <div class="elementor-element elementor-element-f2833e3 e-con-full e-flex e-con e-child" data-id="f2833e3">
+                                                        <div class="elementor-element elementor-element-e8d5686 aux-appear-watch-animation aux-fade-in-left-1 e-con-full e-flex e-con e-child" data-id="e8d5686">
+                                                            <div class="elementor-element elementor-element-aff89cf elementor-widget elementor-widget-aux_image" data-id="aff89cf">
+                                                                <div class="elementor-widget-container">
+                                                                    <section class="widget-container aux-widget-image aux-alignnone">
+                                                                        <div class="aux-media-hint-frame">
+                                                                            <div class="aux-media-image aux-hover-active">
+                                                                                <a href="index.html">
+                                                                                    <img loading="lazy" decoding="async" width="314" height="313"
+                                                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                                                        class="aux-attachment aux-featured-image aux-preload lazyload"
+                                                                                        alt="logo Discover Aveiro Turismo Aluguer de bicicleta passeio de barco moliceiro"
+                                                                                        data-src="https://discoveraveiro.pt/wp-content/uploads/2025/08/logo-Discover-Aveiro-Turismo-Aluguer-de-bicicleta-passeio-de-barco-moliceiro_4.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-d150da8 e-con-full e-flex e-con e-child" data-id="d150da8">
+                                                            <div class="aux-parallax-piece elementor-element elementor-element-9dea77c aux-appear-watch-animation aux-fade-in elementor-widget elementor-widget-aux_modern_heading" data-id="9dea77c">
+                                                                <div class="elementor-widget-container">
+                                                                    <section class="aux-widget-modern-heading">
+                                                                        <div class="aux-widget-inner">
+                                                                            <p class="aux-modern-heading-primary text-uppercase text-accent">DISCOVER AVEIRO</p>
+                                                                            <h5 class="aux-modern-heading-secondary">
+                                                                                <span class="aux-head-before">Loja de Souvenirs</span>
+                                                                            </h5>
+                                                                            <div class="aux-modern-heading-description">
+                                                                                <p>Leve consigo um pedaço da cidade. Desde peças artesanais, sabores locais, postais, azulejos e recordações únicas.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="aux-elementor-footer" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo">
+            <div class="aux-wrapper">
+                <div data-elementor-type="footer" data-elementor-id="183" class="elementor elementor-183">
+                    <!-- Primeira linha do footer -->
+                    <div class="aux-parallax-section elementor-element elementor-element-c6c8897 e-flex e-con-boxed e-con e-parent" data-id="c6c8897">
+                        <div class="e-con-inner">
+                            <!-- Logo da empresa -->
+                            <div class="elementor-element elementor-element-01a5ee8 e-con-full e-flex e-con e-child" data-id="01a5ee8">
+                                <div class="elementor-element elementor-element-3c1855b elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="3c1855b">
+                                    <div class="elementor-widget-container">
+                                        <img width="593" height="397"
+                                            data-src="https://discoveraveiro.pt/wp-content/uploads/2019/05/Logotipo-Margens-e-Cenarios-Lda-Final-01.png"
+                                            class="attachment-full size-full wp-image-379 lazyload"
+                                            alt="Logótipo Margens e Cenários Lda"
+                                            data-srcset="https://discoveraveiro.pt/wp-content/uploads/2019/05/Logotipo-Margens-e-Cenarios-Lda-Final-01.png 593w, https://discoveraveiro.pt/wp-content/uploads/2019/05/Logotipo-Margens-e-Cenarios-Lda-Final-01-200x134.png 200w"
+                                            data-sizes="(max-width: 593px) 100vw, 593px"
+                                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Informação da empresa -->
+                            <div class="elementor-element elementor-element-3c87b27 e-con-full e-flex e-con e-child" data-id="3c87b27">
+                                <div class="elementor-element elementor-element-6840971 elementor-widget elementor-widget-aux_modern_heading" data-id="6840971">
+                                    <div class="elementor-widget-container">
+                                        <section class="aux-widget-modern-heading">
+                                            <div class="aux-widget-inner">
+                                                <h5 class="aux-modern-heading-primary">Margens e Cenários, Lda</h5>
+                                                <div class="aux-modern-heading-description">
+                                                    <p>NIPC 515683817<br>RNAAT 02/2020</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Espaçador -->
+                            <div class="elementor-element elementor-element-54788ea e-con-full e-flex e-con e-child" data-id="54788ea"></div>
+                            
+                            <!-- Logo Visit Portugal -->
+                            <div class="elementor-element elementor-element-2743fcd e-con-full e-flex e-con e-child" data-id="2743fcd">
+                                <div class="elementor-element elementor-element-23075e9 elementor-widget elementor-widget-image" data-id="23075e9">
+                                    <div class="elementor-widget-container">
+                                        <img width="1893" height="614"
+                                            data-src="https://discoveraveiro.pt/wp-content/uploads/2019/05/LogoVisitCenter_cmyk_Pos.png"
+                                            class="attachment-full size-full wp-image-378 lazyload"
+                                            alt="Logo visit center of Portugal"
+                                            data-srcset="https://discoveraveiro.pt/wp-content/uploads/2019/05/LogoVisitCenter_cmyk_Pos.png 1893w, https://discoveraveiro.pt/wp-content/uploads/2019/05/LogoVisitCenter_cmyk_Pos-1536x498.png 1536w, https://discoveraveiro.pt/wp-content/uploads/2019/05/LogoVisitCenter_cmyk_Pos-200x65.png 200w, https://discoveraveiro.pt/wp-content/uploads/2019/05/LogoVisitCenter_cmyk_Pos-600x195.png 600w"
+                                            data-sizes="(max-width: 1893px) 100vw, 1893px"
+                                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Segunda linha do footer (links) -->
+                    <div class="aux-parallax-section elementor-element elementor-element-8342238 e-flex e-con-boxed e-con e-parent" data-id="8342238">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-15d9079 e-con-full e-flex e-con e-child" data-id="15d9079">
+                                <div class="elementor-element elementor-element-d560730 elementor-widget elementor-widget-aux_copyright" data-id="d560730">
+                                    <div class="elementor-widget-container"></div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-eb08a31 e-con-full e-flex e-con e-child" data-id="eb08a31">
+                                <div class="elementor-element elementor-element-ce7413e elementor-widget elementor-widget-aux_copyright" data-id="ce7413e">
+                                    <div class="elementor-widget-container">
+                                        <small>
+                                            <a href="politica-privacidade/index.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> &nbsp;|&nbsp;
+                                            <a href="https://www.consumidor.gov.pt/" target="_blank" rel="noopener noreferrer">Conflitos de Consumo</a> &nbsp;|&nbsp;
+                                            <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer">Livro de Reclamações</a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Botão Scroll to Top -->
+    <div class="aux-goto-top-btn">
+        <div class="aux-hover-slide aux-arrow-nav aux-round aux-outline">
+            <span class="aux-overlay"></span>
+            <span class="aux-svg-arrow aux-h-small-up"></span>
+            <span class="aux-hover-arrow aux-svg-arrow aux-h-small-up aux-white"></span>
+        </div>
+    </div>
 </body>
 </html>
